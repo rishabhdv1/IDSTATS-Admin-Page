@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/style.css">
+        <title>IDSTATS Admin Page</title>
+        <style>
+            .r_cont_fluid{
+                height: 1000px;
+            }
+            .r_purple{
+                background: #442460;
+            }
+            header{
+                min-height: 47px;
+                /* background: red; */
+            }
+            .r_light_purple{
+                background: #56396f;
+            }
+            .r_ll_purple{
+                color: #C6BCCF;
+            }
+            aside .accordion button{
+                border-bottom: 1px solid #562964;
+            }
+            input:focus{
+                box-shadow: none !important;
+            }
+            .accordion-button{
+                border-left: 6px solid #56396f;
+            }
+            .accordion-button:focus{
+                box-shadow: none;
+                border: none;
+                background: #56396f;
+                border-left: 6px solid #FFB900 !important;
+                color: #FFB900;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid r_cont_fluid r_tbdr p-0">
+            <header>
+                <div class="row m-0 h-100">
+                    <div class="col-2 p-0 col-md-12 col-lg-2">
+                        <a class="d-flex justify-content-center mt-3" href="#">
+                            <img class="img-fluid" src="./img/Group.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-10 col-md-12 col-lg-10 p-0 r_tbdr ">
+                        <form class="float-start pt-2">
+                            <input class="form-control border-0 ms-3" type="text" placeholder="Search or help">
+                        </form>
+                        <ul class="nav float-end pt-2">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">
+                                <img class="img-fluid" src="./img/SupportIocn.svg" alt="">
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                <img class="img-fluid" src="./img/ChatIcon.svg" alt="">
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                <img class="img-fluid" src="./img/Notification.svg" alt="">
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                Nidhi Bokadiya <i class="fa fa-chevron-down"></i>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                <img class="img-fluid" src="./img/Ellipse.svg" alt="">
+                              </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <main class="row m-0 p-0 h-100">
+                <aside class="col-2 p-0 r_purple r_tbdr">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item border-0 rounded-0">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed r_light_purple r_ll_purple rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <img class="me-2" src="./img/chart-bar.svg" alt="">
+                                Client dashboard
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item border-0 rounded-0">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed r_light_purple r_ll_purple rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <img class="me-2" src="./img/email.svg" alt="">
+                                Solutions
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body p-0">
+                                
+
+
+
+
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                          Accordion Item #1
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                          Accordion Item #2
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                          Accordion Item #3
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item border-0 rounded-0">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed r_light_purple r_ll_purple rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <img class="me-2" src="./img/receipt-list.svg" alt="">
+                                Paymeny history
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="#">Active</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Disabled</a>
+                                    </li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item border-0 rounded-0">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed r_light_purple r_ll_purple rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <img class="me-2" src="./img/support.svg" alt="">
+                                Resources
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the fourth item's accordion body.</strong>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item border-0 rounded-0">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed r_light_purple r_ll_purple rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <img class="me-2" src="./img/$.svg" alt="">
+                                Pricing
+                            </button>
+                          </h2>
+                          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the fifth item's accordion body.</strong>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item border-0 rounded-0">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed r_light_purple r_ll_purple rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <img class="me-2" src="./img/single.svg" alt="">
+                                Help
+                            </button>
+                          </h2>
+                          <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the sixth item's accordion body.</strong>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item border-0 rounded-0">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed r_light_purple r_ll_purple rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                <img class="me-2" src="./img/settings-gear.svg" alt="">
+                                Setting
+                            </button>
+                          </h2>
+                          <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the seventh item's accordion body.</strong>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </aside>
+                <section class="col-10 p-0 r_tbdr">
+                    section
+                </section>
+            </main>
+            <footer>
+
+            </footer>
+        </div>
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>
