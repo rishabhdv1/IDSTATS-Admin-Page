@@ -1,3 +1,11 @@
 .r_tbdr{
     border: 1px dashed red;
 }
+a{
+    text-decoration: none;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: #56396F;
+    box-shadow: none;
+}

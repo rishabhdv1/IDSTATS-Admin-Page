@@ -16,7 +16,10 @@
             }
             header{
                 min-height: 47px;
-                /* background: red; */
+                background: red;
+            }
+            aside{
+              transition: all .1s linear;
             }
             .r_light_purple{
                 background: #56396f;
@@ -40,18 +43,38 @@
                 border-left: 6px solid #FFB900 !important;
                 color: #FFB900;
             }
+            .accordion-button-home::after{
+              background-image: none !important;
+            }
+            .accordion-button-home:focus{
+              border-left: 6px solid #56396f !important;
+            }
+            @media only screen and (max-width:992px) {
+              aside{
+                transform: translate(0px,0px);
+              }
+              .headerlp{
+                text-align: left !important;
+              }
+            }
+            @media only screen and (max-width:991px) {
+              aside{
+                transform: translate(-200px,0px);
+              }
+            }
         </style>
     </head>
     <body>
         <div class="container-fluid r_cont_fluid r_tbdr p-0">
             <header>
                 <div class="row m-0 h-100">
-                    <div class="col-2 p-0 col-md-12 col-lg-2">
-                        <a class="d-flex justify-content-center mt-3" href="#">
-                            <img class="img-fluid" src="./img/Group.svg" alt="">
+                    <div class="col-2 p-0 col-md-12 col-lg-2 headerlp">
+                        <a class="d-flex justify-content-center mt-3 m-3" href="#">
+                            <img class="img-fluid pe-2" src="./img/Group.svg" alt="">
+                            <h5 class="pt-1" style="color: #4A274F;">NEURO LAB</h5>
                         </a>
                     </div>
-                    <div class="col-10 col-md-12 col-lg-10 p-0 r_tbdr ">
+                    <div class="col-10 col-md-12 col-lg-10 p-0 headerrp r_tbdr ">
                         <form class="float-start pt-2">
                             <input class="form-control border-0 ms-3" type="text" placeholder="Search or help">
                         </form>
@@ -78,7 +101,7 @@
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" href="#">
-                                <img class="img-fluid" src="./img/Ellipse.svg" alt="">
+                                <img class="img-fluid w-75" src="./img/Ellipse.svg" alt="">
                               </a>
                             </li>
                         </ul>
@@ -86,8 +109,12 @@
                 </div>
             </header>
             <main class="row m-0 p-0 h-100">
-                <aside class="col-2 p-0 r_purple r_tbdr">
+                <aside class="col-2 col-lg-2 p-0 r_purple r_tbdr">
+                  
                     <div class="accordion" id="accordionExample">
+                      <button class="accordion-button accordion-button-home r_light_purple r_ll_purple rounded-0" type="button">
+                        <img class="me-2" src="./img/house.svg" alt="">Home
+                      </button>
                         <div class="accordion-item border-0 rounded-0">
                           <h2 class="accordion-header">
                             <button class="accordion-button collapsed r_light_purple r_ll_purple rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -235,7 +262,7 @@
                         </div>
                     </div>
                 </aside>
-                <section class="col-10 p-0 r_tbdr">
+                <section class="col-10 col-lg-10 p-0 r_tbdr">
                     section
                 </section>
             </main>
